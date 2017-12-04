@@ -1,6 +1,8 @@
 class Card {
-    constructor(id, name, cost, attack, hp, effect) {
+    constructor(id, type, name, cost, attack, hp, effect) {
         this.id = id;
+        this.type = type;
+        this.name = name;
         this.cost = cost;
         this.attack = attack;
         this.hp = hp;
@@ -8,8 +10,8 @@ class Card {
     }
 }
 
-let elf = new Card(1, 'elf', 1, 1, 2, null);
+let imp = new Card(1, 'minion', 'Imp', 1, 1, 1, null);
 
-let cards = [elf];
+let cards = [imp];
 
 console.log(cards[0]);

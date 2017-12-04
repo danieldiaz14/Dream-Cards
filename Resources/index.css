@@ -1,0 +1,31 @@
+#deck_count_p1 {
+    font-size: 60px;
+    position: absolute;
+    left: 950px;
+    bottom: 40px;
+    color: red;
+}
+
+#mana_count_p1 {
+    color: red;
+    font-size: 60px;
+    position: absolute;
+    left: 1150px;
+    bottom: 40px;
+}
+
+#deck_count_p2 {
+    font-size: 60px;
+    position: absolute;
+    left: 950px;
+    bottom: 470px;
+    color: red;
+}
+
+#mana_count_p2 {
+    color: red;
+    font-size: 60px;
+    position: absolute;
+    left: 1150px;
+    bottom: 470px;
+}
