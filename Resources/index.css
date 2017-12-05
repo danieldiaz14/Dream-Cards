@@ -1,31 +1,77 @@
 #deck_count_p1 {
-    font-size: 60px;
+    font-size: 45px;
     position: absolute;
-    left: 950px;
-    bottom: 40px;
+    right: 40px;
+    bottom: -23px;
     color: red;
 }
-
+#deck_ui_p1 {
+    color: red;
+    font-size: 30px;
+    position: absolute;
+    right: 105px;
+    bottom: -5px;
+}
 #mana_count_p1 {
     color: red;
-    font-size: 60px;
+    font-size: 45px;
     position: absolute;
-    left: 1150px;
-    bottom: 40px;
+    right: 40px;
+    bottom: 90px;
+}
+
+#mana_ui_p1 {
+    color: red;
+    font-size: 30px;
+    position: absolute;
+    right: 100px;
+    bottom: 115px;
+}
+
+#hand_count_p1 {
+    color: red;
+    font-size: 20px;
+    position: absolute;
+    left: 650px;
+    bottom: 0px;
 }
 
 #deck_count_p2 {
-    font-size: 60px;
+    font-size: 45px;
     position: absolute;
-    left: 950px;
-    bottom: 470px;
+    right: 55px;
+    top: 55px;
+    color: red;
+}
+
+#deck_ui_p2 {
+    font-size: 30px;
+    position: absolute;
+    right: 105px;
+    top: 80px;
     color: red;
 }
 
 #mana_count_p2 {
     color: red;
-    font-size: 60px;
+    font-size: 45px;
     position: absolute;
-    left: 1150px;
-    bottom: 470px;
+    right: 55px;
+    top: -33px;
+}
+
+#mana_ui_p2 {
+    color: blue;
+    font-size: 30px;
+    position: absolute;
+    right: 100px;
+    top: -10px;
+}
+
+#hand_count_p2 {
+    color: red;
+    font-size: 20px;
+    position: absolute;
+    left: 650px;
+    top: -10px;
 }

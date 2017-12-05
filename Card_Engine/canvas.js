@@ -1,34 +1,39 @@
 const canvas = document.getElementById("myGame"); // Get the canvas id from the html document
 const context = canvas.getContext('2d'); // game will be rendered in 2d
-var current_deck = 30; // keeps track of current deck.
-var current_mana = 0; // keeps track of current mana.
-function tile(x,y) {
-  let board = [0,1,0,1,0,1];
+function tile(x,y, color) {
+  let board = [0,1,0,1,0];
   for(var i = 0; i < board.length; i++) {
     if(board[i] == 0) {
-      context.fillStyle = "#ceaf50";
-      context.fillRect(x, y, 150, 200);
+      context.fillStyle = color;
+      context.fillRect(x, y, 181, 165);
     }
     if (board[i] == 1){
-      context.fillStyle = "#f7db88";
-      context.fillRect(x, y, 150, 200);
+      context.fillStyle = color;
+      context.fillRect(x, y, 181, 165);
     }
-    x += 150;
+    x += 182;
   }
-  return board;
 } // Tile function will create the tiles for the boards.
 
-function deck(x, y, color) {
+function info(x, y, color) {
   context.fillStyle = color;
-  context.fillRect(x, y, 150, 200);
+  context.fillRect(x, y, 180, 160);
 }//this is the color indicator on your deck.
+
+function hero_ui(x, y, color) {
+  context.fillStyle = color;
+  context.fillRect(x, y, 180, 160);
+}//this is the color indicator on your hero.
+
 function draw() {
   context.fillStyle = "#000"; // fill canvas with this color
   context.fillRect(0, 0, canvas.width, canvas.height); // Black Rectangle background
-  tile(0, 7);
-  tile(0,430);
-  deck(900, 430, "#42a7f4");
-  deck(900, 7, "#ff7f35");
+  tile(180, 160, "red");
+  tile(180, 325, "yellow");
+  info(1090, 490, "#42a7f4"); // Player 1 info ui
+  hero_ui(0, 490, 'blue'); // Player 1 Hero
+  info(0, 0, "#ff7f35"); // Player 2 info ui
+  hero_ui(1090, 0, 'pink'); // Player 2 Hero
 }//drawing the state of the board/
 function updateDeck(player) {
   document.getElementById(player).innerText = current_deck;
