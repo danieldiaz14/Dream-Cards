@@ -1,3 +1,24 @@
+#end_turn {
+    position: absolute;
+    font-size: 40px;
+    right: 6px;
+    top: 309px;
+}
+#player1_name {
+    font-size: 40px;
+    color: green;
+    position: absolute;
+    bottom: 100px;
+    left: 10px;
+}
+
+#player1_hp {
+    font-size: 40px;
+    color: red;
+    position: absolute;
+    bottom: 95px;
+    left: 145px;
+}
 #deck_count_p1 {
     font-size: 45px;
     position: absolute;
@@ -34,6 +55,22 @@
     position: absolute;
     left: 650px;
     bottom: 0px;
+}
+
+#player2_name {
+    position: absolute;
+    color: red;
+    font-size: 40px;
+    left: 10px;
+    top: -35px;
+}
+
+#player2_hp {
+    position: absolute;
+    color: red;
+    font-size: 40px;
+    left: 145px;
+    top: -35px;
 }
 
 #deck_count_p2 {

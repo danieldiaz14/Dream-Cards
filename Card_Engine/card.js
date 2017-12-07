@@ -10,8 +10,4 @@ class Card {
     }
 }
 
-let imp = new Card(1, 'minion', 'Imp', 1, 1, 1, null);
-
-let cards = [imp];
-
-console.log(cards[0]);
+let imp = new Card(0, 'minion', 'Imp', 1, 1, 1, null);
