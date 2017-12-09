@@ -16,7 +16,7 @@
     font-size: 40px;
     color: red;
     position: absolute;
-    bottom: 95px;
+    bottom: 100px;
     left: 145px;
 }
 #deck_count_p1 {
@@ -62,7 +62,7 @@
     color: red;
     font-size: 40px;
     left: 10px;
-    top: -35px;
+    top: -40px;
 }
 
 #player2_hp {
@@ -70,7 +70,7 @@
     color: red;
     font-size: 40px;
     left: 145px;
-    top: -35px;
+    top: -40px;
 }
 
 #deck_count_p2 {
