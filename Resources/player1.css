@@ -1,0 +1,120 @@
+#end_turn {
+    position: absolute;
+    font-size: 40px;
+    right: 643px;
+    top: 309px;
+}
+#player1_name {
+    font-size: 40px;
+    color: green;
+    position: absolute;
+    bottom: 100px;
+    left: 10px;
+    bottom: 365px;
+}
+
+#player1_hp {
+    font-size: 40px;
+    color: red;
+    position: absolute;
+    bottom: 365px;
+    left: 145px;
+}
+#deck_count_p1 {
+    font-size: 45px;
+    position: absolute;
+    right: 700px;
+    bottom: 255px;
+    color: red;
+}
+#deck_ui_p1 {
+    color: red;
+    font-size: 30px;
+    position: absolute;
+    right: 745px;
+    bottom: 280px;
+}
+#mana_count_p1 {
+    color: red;
+    font-size: 45px;
+    position: absolute;
+    right: 700px;
+    bottom: 355px;
+}
+
+#mana_ui_p1 {
+    color: red;
+    font-size: 30px;
+    position: absolute;
+    right: 740px;
+    bottom: 380px
+}
+
+#hand_count_p1 {
+    color: red;
+    font-size: 20px;
+    position: absolute;
+    left: 650px;
+    bottom: 275px;
+}
+
+@media only screen and (max-width: 1040) {
+    #end_turn {
+        position: absolute;
+        font-size: 40px;
+        right: 6px;
+        top: 309px;
+    }
+    #player1_name {
+        font-size: 40px;
+        color: green;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+    }
+    
+    #player1_hp {
+        font-size: 40px;
+        color: red;
+        position: absolute;
+        bottom: 38%;
+        left: 8%;
+    }
+    #deck_count_p1 {
+        font-size: 45px;
+        position: absolute;
+        right: 40px;
+        bottom: -23px;
+        color: red;
+    }
+    #deck_ui_p1 {
+        color: red;
+        font-size: 30px;
+        position: absolute;
+        right: 105px;
+        bottom: -5px;
+    }
+    #mana_count_p1 {
+        color: red;
+        font-size: 45px;
+        position: absolute;
+        right: 40px;
+        bottom: 90px;
+    }
+    
+    #mana_ui_p1 {
+        color: red;
+        font-size: 30px;
+        position: absolute;
+        right: 100px;
+        bottom: 115px;
+    }
+    
+    #hand_count_p1 {
+        color: red;
+        font-size: 20px;
+        position: absolute;
+        left: 650px;
+        bottom: 0px;
+    }
+}
