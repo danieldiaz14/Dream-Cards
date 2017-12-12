@@ -2,7 +2,7 @@
     position: absolute;
     color: red;
     font-size: 40px;
-    left: 1%;
+    left: 10px;
     top: -40px;
 }
 
@@ -15,35 +15,35 @@
 }
 
 #deck_count_p2 {
-    font-size: 45px;
+    font-size: 40px;
     position: absolute;
-    right: 700px;
-    top: 55px;
+    right: 670px;
+    top: 80px;
     color: red;
 }
 
 #deck_ui_p2 {
-    font-size: 30px;
+    font-size: 40px;
     position: absolute;
-    right: 740px;
+    right: 720px;
     top: 80px;
     color: red;
 }
 
 #mana_count_p2 {
     color: red;
-    font-size: 45px;
+    font-size: 40px;
     position: absolute;
-    right: 700px;
-    top: -35px;
+    right: 670px;
+    top: -31px;
 }
 
 #mana_ui_p2 {
     color: blue;
-    font-size: 30px;
+    font-size: 40px;
     position: absolute;
-    right: 735px;
-    top: -10px;
+    right: 715px;
+    top: -35px;
 }
 
 #hand_count_p2 {

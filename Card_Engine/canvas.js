@@ -28,7 +28,7 @@ canvas.addEventListener('click', function(event) {
     alert('you clicked ' + player1.hand[5].name);
   }
   if(x >= handX+610&& x <= handXOffset+610 && y >=handY && handYOffset) {
-    alert('you clicked ' + player1.hand[5].name);
+    alert('you clicked ' + player1.hand[6].name);
   }
 }, false);
 
@@ -54,6 +54,10 @@ function draw_Element(x, y, color, width, height) {
 }
 // hand x= 360
 // hand y = 530 - width is 45 and height is 60
+
+function timeChecker(input) {
+  return Math.floor(input / 1000);
+}
 function draw() {
   context.fillStyle = "#000"; // fill canvas with this color
   context.fillRect(0, 0, canvas.width, canvas.height); // Black Rectangle background
@@ -90,16 +94,19 @@ function update(time = 0) {
   updateValue('deck_count_p1', player1.deck.length); // player 1 deck count
   updateValue('hand_count_p2', player2.hand.length); // Player 2 hand count
   updateValue('deck_count_p2', player2.deck.length); // player 2 deck count
+  updateValue('timer', timeChecker(turnTracker));
+  updateValue('mana_count_p1', player1.mana);
   requestAnimationFrame(update);
 }
 
-player1.hand.push(imp);
-player1.hand.push(imp_lord);
-player1.hand.push(imp_archer);
-player1.hand.push(imp_mage);
-player1.hand.push(raigon);
-player1.hand.push(boukoua);
-player1.hand.push(Okami);
+function gainMana(input) {
+  input.mana +=1;
+}
+
+function drawCards(hand) {
+  let draw = hand.deck.shift();
+  hand.hand.push(draw);
+}
 /*
 1. Made the card interactions.
 
@@ -110,3 +117,5 @@ player1.hand.push(Okami);
 4. Loop logic
 */
 update();
+drawCards(player1);
+gainMana(player1);

@@ -21,33 +21,33 @@
     left: 145px;
 }
 #deck_count_p1 {
-    font-size: 45px;
+    font-size: 40px;
     position: absolute;
-    right: 700px;
-    bottom: 255px;
+    right: 670px;
+    bottom: 275px;
     color: red;
 }
 #deck_ui_p1 {
     color: red;
-    font-size: 30px;
+    font-size: 40px;
     position: absolute;
-    right: 745px;
+    right: 720px;
     bottom: 280px;
 }
 #mana_count_p1 {
     color: red;
-    font-size: 45px;
+    font-size: 40px;
     position: absolute;
-    right: 700px;
-    bottom: 355px;
+    right: 670px;
+    bottom: 365px;
 }
 
 #mana_ui_p1 {
     color: red;
-    font-size: 30px;
+    font-size: 40px;
     position: absolute;
-    right: 740px;
-    bottom: 380px
+    right: 710px;
+    bottom: 370px
 }
 
 #hand_count_p1 {
@@ -56,6 +56,21 @@
     position: absolute;
     left: 650px;
     bottom: 275px;
+}
+
+#timer_ui {
+    color: red;
+    font-size: 40px;
+    position: absolute;
+    right: 710px;
+    bottom: 500px;
+}
+#timer {
+    color: red;
+    font-size: 40px;
+    position: absolute;
+    right: 670px;
+    bottom: 500px;
 }
 
 @media only screen and (max-width: 1040) {
