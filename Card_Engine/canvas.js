@@ -2,8 +2,8 @@ const canvas = document.getElementById("myGame"); // Get the canvas id from the 
 const context = canvas.getContext('2d'); // game will be rendered in 2d
 
 canvas.addEventListener('click', function(event) {
-  var x = event.pageX - 0;
-  var y = event.pageY - 0;
+  let x = event.pageX - 0;
+  let y = event.pageY - 0;
   let handX = 360;
   let handXOffset = handX + 45;
   let handY = 530;
@@ -30,6 +30,12 @@ canvas.addEventListener('click', function(event) {
   if(x >= handX+610&& x <= handXOffset+610 && y >=handY && handYOffset) {
     alert('you clicked ' + player1.hand[6].name);
   }
+}, false);
+
+
+canvas.addEventListener('click', function(event) {
+  let x = event.pageX - 0;
+  let y = event.pageY - 0;
 }, false);
 
 function tile(x,y, color, number) {
@@ -59,16 +65,16 @@ function timeChecker(input) {
   return Math.floor(input / 1000);
 }
 function draw() {
-  context.fillStyle = "#000"; // fill canvas with this color
+  context.fillStyle = "#d17c51"; // fill canvas with this color
   context.fillRect(0, 0, canvas.width, canvas.height); // Black Rectangle background
   drawHand(360, 530, player1); // player 1 hand state.
   draw_Element(1090, 245, "green", 181, 165); // Background behind End Turn.
-  tile(180, 160, "red", 5); // bot board
-  tile(180, 325, "yellow", 5); // player1 board
-  draw_Element(1090, 490, "#42a7f4", 180, 160); // Player 1 info ui
-  draw_Element(0, 490, 'blue', 180, 160); // Player 1 hero
-  draw_Element(0, 0, "orange", 180, 160); // Player 2 info ui
-  draw_Element(1090, 0, 'pink', 180, 160); // Player 2 Hero
+  tile(180, 160, "#4f0e15", 5); // bot board
+  tile(180, 325, "#0f384f", 5); // player1 board
+  draw_Element(1090, 490, "#0f384f", 180, 160); // Player 1 info ui
+  draw_Element(0, 490, '#0f384f', 180, 160); // Player 1 hero
+  draw_Element(0, 0, "#4f0e15", 180, 160); // Player 2 info ui
+  draw_Element(1090, 0, '#4f0e15', 180, 160); // Player 2 Hero
 }//drawing the state of the board/
 
 function updateValue(player, value) {
@@ -102,7 +108,14 @@ function update(time = 0) {
 function gainMana(input) {
   input.mana +=1;
 }
-
+function startGame(hand) {
+  drawCards(hand);
+  drawCards(hand);
+  drawCards(hand);
+  drawCards(hand);
+  drawCards(hand);
+  drawCards(hand);
+}
 function drawCards(hand) {
   let draw = hand.deck.shift();
   hand.hand.push(draw);
@@ -117,5 +130,7 @@ function drawCards(hand) {
 4. Loop logic
 */
 update();
-drawCards(player1);
+randomize(player1.deck);
+randomize(player2.deck);
 gainMana(player1);
+startGame(player1);

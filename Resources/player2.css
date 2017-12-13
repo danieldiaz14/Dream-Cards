@@ -1,6 +1,6 @@
 #player2_name {
     position: absolute;
-    color: red;
+    color: white;
     font-size: 40px;
     left: 10px;
     top: -40px;
@@ -19,7 +19,7 @@
     position: absolute;
     right: 670px;
     top: 80px;
-    color: red;
+    color: white;
 }
 
 #deck_ui_p2 {
@@ -27,11 +27,11 @@
     position: absolute;
     right: 720px;
     top: 80px;
-    color: red;
+    color: white;
 }
 
 #mana_count_p2 {
-    color: red;
+    color: white;
     font-size: 40px;
     position: absolute;
     right: 670px;
@@ -39,7 +39,7 @@
 }
 
 #mana_ui_p2 {
-    color: blue;
+    color: white;
     font-size: 40px;
     position: absolute;
     right: 715px;
@@ -47,7 +47,7 @@
 }
 
 #hand_count_p2 {
-    color: red;
+    color: white;
     font-size: 20px;
     position: absolute;
     left: 650px;

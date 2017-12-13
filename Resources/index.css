@@ -1,9 +1,45 @@
-a {
-    color: 'black';
+#play {
     text-decoration: none;
+    color: #bc6c16;
+    background-color: #e0ad76;
+    font-size: 80px;
+    position: absolute;
+    left: 740px;
+    top: 360px;
+    border-radius: 20px;
 }
 
-a:visited {
-    color: 'black';
+#play:hover {
     text-decoration: none;
+    color: #e0ad76;
+    background-color: #bc6c16;
+    font-size: 100px;
+    position: absolute;
+    left: 740px;
+    top: 360px;
+    border-radius: 20px;
+    -webkit-transform-origin: 
+}
+
+
+#deck {
+    text-decoration: none;
+    color: #bc6c16;
+    background-color: #e0ad76;
+    font-size: 80px;
+    position: absolute;
+    left: 740px;
+    bottom: 300px;
+    border-radius: 20px;
+}
+
+#deck:hover {
+    text-decoration: none;
+    color: #e0ad76;
+    background-color: #bc6c16;
+    font-size: 100px;
+    position: absolute;
+    left: 740px;
+    bottom: 300px;
+    border-radius: 20px;
 }
